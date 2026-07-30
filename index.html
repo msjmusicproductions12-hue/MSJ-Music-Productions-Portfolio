@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Manasseh Sam John — MSJ Music Productions</title>
+<meta name="description" content="Manasseh Sam John — Music Producer, Singer, Songwriter & Keyboardist under MSJ Music Productions." />
+<link rel="icon" href="/static/images/msj-logo.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="/static/style.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <img src="/static/images/msj-logo.png" alt="MSJ Music Productions" class="loader-logo" />
+    <div class="loader-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- Cursor glow -->
+<div id="cursor-glow"></div>
+
+<!-- Floating particles canvas -->
+<canvas id="particles"></canvas>
+
+<!-- Nav -->
+<header id="site-nav" class="glass-card">
+  <a href="#hero" class="nav-logo">
+    <img src="/static/images/msj-logo.png" alt="MSJ" />
+  </a>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#journey">Journey</a>
+    <a href="#studio">Studio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button id="theme-toggle" class="icon-btn magnetic" aria-label="Toggle theme">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <button id="nav-burger" class="icon-btn magnetic" aria-label="Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<div id="mobile-menu" class="glass-card">
+  <a href="#about">About</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#journey">Journey</a>
+  <a href="#studio">Studio</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="/static/images/hero-keyboard-1.jpg" alt="Manasseh performing on keyboard" />
+      <div class="hero-scrim"></div>
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow reveal">MSJ Music Productions</p>
+      <h1 class="hero-title reveal">Manasseh<br/>Sam&nbsp;John</h1>
+      <p class="hero-sub reveal">Producer &middot; Singer &middot; Songwriter &middot; Keyboardist</p>
+      <div class="hero-cta reveal">
+        <a href="#portfolio" class="btn btn-primary magnetic">Watch My Work</a>
+        <a href="#contact" class="btn btn-glass glass-card magnetic">Get in Touch</a>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span></span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-head">
+      <p class="eyebrow">About</p>
+      <h2>Behind the Music</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-portrait">
+        <img src="/static/images/portrait-jacket.jpg" alt="Manasseh Sam John portrait" />
+      </div>
+      <div class="about-copy glass-card">
+        <p>
+          Manasseh Sam John is a young musician, singer, and producer behind
+          <strong>MSJ Music Productions</strong>. Since childhood he has been
+          drawn to melody and rhythm — writing songs, playing keys, and shaping
+          sound in his home studio.
+        </p>
+        <p>
+          Beyond music, Manasseh is also a video editor and photographer,
+          crafting the full creative experience around every release — from the
+          first note to the final frame.
+        </p>
+        <div class="about-facts">
+          <div class="fact glass-card">
+            <span class="fact-label">Born</span>
+            <span class="fact-value">October 30, 2012</span>
+          </div>
+          <div class="fact glass-card">
+            <span class="fact-label">Age</span>
+            <span class="fact-value" id="age-value">—</span>
+          </div>
+          <div class="fact glass-card">
+            <span class="fact-label">Brand</span>
+            <span class="fact-value">MSJ Music Productions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="roles-grid">
+      
+      <div class="role-card glass-card" tabindex="0">
+        <div class="role-icon"><i class="fa-solid fa-compact-disc"></i></div>
+        <h3>Music Producer</h3>
+        <p>Crafting original tracks from concept to final master.</p>
+      </div>
+      <div class="role-card glass-card" tabindex="0">
+        <div class="role-icon"><i class="fa-solid fa-sliders"></i></div>
+        <h3>Mix & Master Engineer</h3>
+        <p>Polishing every frequency for a radio-ready sound.</p>
+      </div>
+      <div class="role-card glass-card" tabindex="0">
+        <div class="role-icon"><i class="fa-solid fa-microphone"></i></div>
+        <h3>Singer</h3>
+        <p>Bringing melodies and lyrics to life with an emotive voice.</p>
+      </div>
+      <div class="role-card glass-card" tabindex="0">
+        <div class="role-icon"><i class="fa-solid fa-pen-nib"></i></div>
+        <h3>Songwriter</h3>
+        <p>Writing lyrics and melodies that tell a story.</p>
+      </div>
+      <div class="role-card glass-card" tabindex="0">
+        <div class="role-icon"><i class="fa-solid fa-music"></i></div>
+        <h3>Keyboardist</h3>
+        <p>Performing on keys across studio sessions and live stages.</p>
+      </div>
+      <div class="role-card glass-card" tabindex="0">
+        <div class="role-icon"><i class="fa-solid fa-clapperboard"></i></div>
+        <h3>Video Editor</h3>
+        <p>Editing cinematic visuals that match the music.</p>
+      </div>
+      <div class="role-card glass-card" tabindex="0">
+        <div class="role-icon"><i class="fa-solid fa-camera"></i></div>
+        <h3>Photographer</h3>
+        <p>Capturing moments with a creative, cinematic eye.</p>
+      </div>
+      <div class="role-card glass-card" tabindex="0">
+        <div class="role-icon"><i class="fa-solid fa-image"></i></div>
+        <h3>Photo Editor</h3>
+        <p>Retouching and grading photos to a polished finish.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="section-head">
+      <p class="eyebrow">Portfolio</p>
+      <h2>Featured Work</h2>
+      <p class="section-sub">A selection of performances, covers, and productions.</p>
+    </div>
+    <div class="video-grid">
+      
+      <div class="video-card glass-card" data-video-id="0ImLJcq4lqQ">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/0ImLJcq4lqQ/hqdefault.jpg" alt="Featured work video 1" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+      <div class="video-card glass-card" data-video-id="6PJGNGN4iIA">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/6PJGNGN4iIA/hqdefault.jpg" alt="Featured work video 2" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+      <div class="video-card glass-card" data-video-id="dYyZiG1j8-0">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/dYyZiG1j8-0/hqdefault.jpg" alt="Featured work video 3" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+      <div class="video-card glass-card" data-video-id="pVe3Kp5QFWY">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/pVe3Kp5QFWY/hqdefault.jpg" alt="Featured work video 4" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+      <div class="video-card glass-card" data-video-id="TwApunrMlzA">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/TwApunrMlzA/hqdefault.jpg" alt="Featured work video 5" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+      <div class="video-card glass-card" data-video-id="VcSSIS_CD_k">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/VcSSIS_CD_k/hqdefault.jpg" alt="Featured work video 6" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+      <div class="video-card glass-card" data-video-id="r4r9BQ4x_GQ">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/r4r9BQ4x_GQ/hqdefault.jpg" alt="Featured work video 7" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+      <div class="video-card glass-card" data-video-id="1rDW_IlMmQU">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/1rDW_IlMmQU/hqdefault.jpg" alt="Featured work video 8" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+      <div class="video-card glass-card" data-video-id="zg6X7UOz480">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/zg6X7UOz480/hqdefault.jpg" alt="Featured work video 9" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+      <div class="video-card glass-card" data-video-id="xWebOX6oOwQ">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/xWebOX6oOwQ/hqdefault.jpg" alt="Featured work video 10" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+      <div class="video-card glass-card" data-video-id="ji_RBSZsWsI">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/ji_RBSZsWsI/hqdefault.jpg" alt="Featured work video 11" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+      <div class="video-card glass-card" data-video-id="hkP0L5g3l34">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/hkP0L5g3l34/hqdefault.jpg" alt="Featured work video 12" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+      <div class="video-card glass-card" data-video-id="Q0cXxH-DofU">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/Q0cXxH-DofU/hqdefault.jpg" alt="Featured work video 13" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+      <div class="video-card glass-card" data-video-id="W3Xd3SkKFMc">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/W3Xd3SkKFMc/hqdefault.jpg" alt="Featured work video 14" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+      <div class="video-card glass-card" data-video-id="MXBxGkHTh9c">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/MXBxGkHTh9c/hqdefault.jpg" alt="Featured work video 15" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+      <div class="video-card glass-card" data-video-id="c26YYpF24nc">
+        <div class="video-thumb-wrap">
+          <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/c26YYpF24nc/hqdefault.jpg" alt="Featured work video 16" />
+          <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATIVE JOURNEY -->
+  <section id="journey">
+    <div class="section-head">
+      <p class="eyebrow">Creative Journey</p>
+      <h2>The Story So Far</h2>
+    </div>
+    <div class="journey-list">
+      
+      <div class="journey-item glass-card" style="--i:0">
+        <div class="journey-year">2012</div>
+        <h3>The Beginning</h3>
+        <p>Born on October 30, 2012 — the start of a musical journey.</p>
+      </div>
+      <div class="journey-item glass-card" style="--i:1">
+        <div class="journey-year">Early Years</div>
+        <h3>First Notes</h3>
+        <p>Discovered a love for keys and melody at a young age.</p>
+      </div>
+      <div class="journey-item glass-card" style="--i:2">
+        <div class="journey-year">Growth</div>
+        <h3>Stage & Studio</h3>
+        <p>Started performing live and producing original music under MSJ Music Productions.</p>
+      </div>
+      <div class="journey-item glass-card" style="--i:3">
+        <div class="journey-year">Today</div>
+        <h3>MSJ Music Productions</h3>
+        <p>Producing, mixing, singing, and creating visual content across platforms.</p>
+      </div>
+      <div class="journey-item glass-card" style="--i:4">
+        <div class="journey-year">Tomorrow</div>
+        <h3>What's Next</h3>
+        <p>Continuing to grow as a producer, performer, and storyteller through music.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDIO & EQUIPMENT -->
+  <section id="studio">
+    <div class="section-head">
+      <p class="eyebrow">Studio &amp; Equipment</p>
+      <h2>The Gear Behind the Sound</h2>
+    </div>
+    <div class="equip-grid">
+      
+      <div class="equip-card glass-card">
+        <div class="equip-img-wrap">
+          <img src="/static/images/hero-keyboard-1.jpg" alt="Arturia KeyLab" loading="lazy" />
+        </div>
+        <h3>Arturia KeyLab</h3>
+        <p>MIDI performance keyboard for production & live play.</p>
+      </div>
+      <div class="equip-card glass-card">
+        <div class="equip-img-wrap">
+          <img src="/static/images/studio-blue-keyboard.jpg" alt="Studio Rig" loading="lazy" />
+        </div>
+        <h3>Studio Rig</h3>
+        <p>Multi-keyboard studio setup for composing and recording.</p>
+      </div>
+      <div class="equip-card glass-card">
+        <div class="equip-img-wrap">
+          <img src="/static/images/home-studio-setup.jpg" alt="König &amp; Meyer Stand + Korg + Pa700" loading="lazy" />
+        </div>
+        <h3>König & Meyer Stand + Korg + Pa700</h3>
+        <p>Full home studio arranger setup.</p>
+      </div>
+      <div class="equip-card glass-card">
+        <div class="equip-img-wrap">
+          <img src="/static/images/live-performance-band.jpg" alt="Korg Kronos — Live" loading="lazy" />
+        </div>
+        <h3>Korg Kronos — Live</h3>
+        <p>Live performance rig with full band on stage.</p>
+      </div>
+    </div>
+    <div class="studio-gallery">
+      <img src="/static/images/studio-mic.jpg" alt="Studio microphone session" />
+      <img src="/static/images/studio-blue-keyboard.jpg" alt="Studio keyboard session" />
+      <img src="/static/images/portrait-smile.jpg" alt="Manasseh smiling in studio" />
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-head">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's Create Something</h2>
+    </div>
+    <div class="contact-grid">
+      <a class="contact-card glass-card magnetic" href="tel:+918921087645">
+        <i class="fa-solid fa-phone"></i>
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">+91 89210 87645</span>
+      </a>
+      <a class="contact-card glass-card magnetic" href="https://wa.me/918921087645" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="contact-label">WhatsApp</span>
+        <span class="contact-value">+91 89210 87645</span>
+      </a>
+      <a class="contact-card glass-card magnetic" href="mailto:msjmusicproductions12@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span class="contact-label">Email</span>
+        <span class="contact-value">msjmusicproductions12@gmail.com</span>
+      </a>
+    </div>
+
+    <div class="section-head follow-head">
+      <p class="eyebrow">Follow Me</p>
+    </div>
+    <div class="socials">
+      <a class="social-btn glass-card magnetic" href="https://www.instagram.com/msjmusic_productions?igsh=MTVrOGZoYzVrMWdiNw==" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a class="social-btn glass-card magnetic" href="https://www.facebook.com/share/19CjdUjuFD/" target="_blank" rel="noopener" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <img src="/static/images/msj-logo.png" alt="MSJ Music Productions" class="footer-logo" />
+  <p>&copy; <span id="year"></span> MSJ Music Productions. All rights reserved.</p>
+</footer>
+
+<!-- Video modal -->
+<div id="video-modal">
+  <div class="video-modal-inner glass-card">
+    <button id="video-modal-close" class="icon-btn magnetic" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <div id="video-modal-frame"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="/static/liquid-glass.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>
