@@ -43,6 +43,47 @@ const JOURNEY = [
   { year: 'Tomorrow', title: 'What\'s Next', desc: 'Continuing to grow as a producer, performer, and storyteller through music.' },
 ]
 
+const STORY = [
+  {
+    icon: 'fa-baby',
+    title: 'A Gift From God',
+    paras: [
+      "I believe music was placed inside me by God before I was even born.",
+      "While I was still in my mother\u2019s womb, my father, Evg. Samkutty John, would play the guitar. Whenever he played, my little hands and feet would move along with the music. Even before I could speak, walk, or play an instrument, there seemed to be a connection between me and music.",
+      "Two days after I was born, my father was playing the guitar while I was sleeping. Suddenly, he noticed something unusual\u2014I began moving my tiny hands and feet to the sound of the guitar. That was one of the first moments when he realized that music was already a part of me.",
+    ],
+  },
+  {
+    icon: 'fa-music',
+    title: 'My First Keyboard',
+    paras: [
+      "When I was 3 years old, my parents gifted me my first keyboard.",
+      "I would go to church with my family and listen carefully to the songs being sung and played. When I came home, I would try to remember what I had heard and play the melodies note by note on my keyboard.",
+      "I didn\u2019t learn those songs from written music. Somehow, I could hear them, remember them, and find the notes on the keyboard.",
+    ],
+  },
+  {
+    icon: 'fa-hands-praying',
+    title: 'A New Season During COVID-19',
+    paras: [
+      "During the COVID-19 pandemic, my father felt led by the Holy Spirit to return to Dubai.",
+      "When I was 7 years old, we began worshipping together in our apartment. Those small worship sessions became a very important part of my musical journey.",
+      "One day, while the church singers were practicing, I noticed that some of the notes they were singing weren\u2019t quite right. I began correcting them because I could hear exactly how the melody was supposed to sound.",
+      "That was when my father realized that I had something very special\u2014a strong ability to recognize musical notes by ear, commonly known as perfect pitch.",
+    ],
+  },
+  {
+    icon: 'fa-star',
+    title: 'A Gift With a Purpose',
+    paras: [
+      "From the age of 7, I also began learning and creating orchestrations, discovering how different instruments could come together to create a complete musical arrangement.",
+      "But I don\u2019t see music simply as a talent.",
+      "I see it as a gift from God.",
+      "Every note, every melody, every rhythm, and every opportunity to create music is something I want to use for His glory.",
+    ],
+  },
+]
+
 const EQUIPMENT = [
   { img: '/static/images/hero-keyboard-1.jpg', name: 'Arturia KeyLab', desc: 'MIDI performance keyboard for production & live play.' },
   { img: '/static/images/studio-blue-keyboard.jpg', name: 'Studio Rig', desc: 'Multi-keyboard studio setup for composing and recording.' },
@@ -71,6 +112,15 @@ app.get('/', (c) => {
           <img class="video-thumb" loading="lazy" src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="Featured work video ${i + 1}" />
           <button class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
         </div>
+      </div>`
+  ).join('')
+
+  const storyHtml = STORY.map(
+    (s, i) => `
+      <div class="story-item glass-card" style="--i:${i}">
+        <div class="story-icon"><i class="fa-solid ${s.icon}"></i></div>
+        <h3>${s.title}</h3>
+        ${s.paras.map((p) => `<p>${p}</p>`).join('')}
       </div>`
   ).join('')
 
@@ -130,6 +180,7 @@ app.get('/', (c) => {
   </a>
   <nav class="nav-links">
     <a href="#about">About</a>
+    <a href="#story">My Story</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#journey">Journey</a>
     <a href="#studio">Studio</a>
@@ -147,6 +198,7 @@ app.get('/', (c) => {
 
 <div id="mobile-menu" class="glass-card">
   <a href="#about">About</a>
+  <a href="#story">My Story</a>
   <a href="#portfolio">Portfolio</a>
   <a href="#journey">Journey</a>
   <a href="#studio">Studio</a>
@@ -213,6 +265,27 @@ app.get('/', (c) => {
 
     <div class="roles-grid">
       ${rolesHtml}
+    </div>
+  </section>
+
+  <!-- MY STORY -->
+  <section id="story">
+    <div class="section-head">
+      <p class="eyebrow">My Story</p>
+      <h2>A Gift From God</h2>
+      <p class="section-sub">The journey of how music found me, told in my own words.</p>
+    </div>
+    <div class="story-list">
+      ${storyHtml}
+    </div>
+    <blockquote class="story-verse glass-card">
+      <p>&ldquo;I will sing unto the LORD as long as I live.&rdquo;</p>
+      <cite>&mdash; Psalm 104:33</cite>
+    </blockquote>
+    <div class="story-closing">
+      <p>My journey is still just beginning. I&rsquo;m learning. I&rsquo;m creating. I&rsquo;m growing.</p>
+      <p>And above everything else, I want my music to point people back to the One who gave me the gift in the first place.</p>
+      <p class="story-signoff">This is my story. This is my gift. And this is my purpose &mdash; to use music for the glory of God. <i class="fa-solid fa-music"></i></p>
     </div>
   </section>
 

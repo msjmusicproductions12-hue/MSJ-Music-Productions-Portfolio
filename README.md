@@ -9,6 +9,7 @@
 - **Hero** — full-bleed photo hero, animated title, CTA buttons, scroll indicator.
 - **About** — bio copy, auto-calculated live age (from DOB Oct 30, 2012), role/brand facts.
 - **Roles grid** — 8 Liquid Glass cards (Music Producer, Mix & Master Engineer, Singer, Songwriter, Keyboardist, Video Editor, Photographer, Photo Editor) — no skill percentages, as requested.
+- **My Story** — personal testimony section ("A Gift From God") in Manasseh's own words, across 4 glass-card chapters (A Gift From God, My First Keyboard, A New Season During COVID-19, A Gift With a Purpose), plus a Psalm 104:33 verse quote and closing sign-off. Content lives in the `STORY` array in `src/index.tsx`.
 - **Portfolio** — 16 embedded YouTube videos as glass cards with thumbnail + play button; click opens a modal lightbox with the YouTube embed. New videos can be added by editing the `YOUTUBE_IDS` array in `src/index.tsx`.
 - **Creative Journey** — vertical timeline of milestones from birth to today/tomorrow.
 - **Studio & Equipment** — gear cards (Arturia KeyLab, studio rig, König & Meyer stand + Korg + Pa700, live rig) plus a photo gallery.
